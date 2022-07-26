@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1"/>
+    <title>Fabio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="NEW%20LOGO.png">
+    </head>
+    <body>
+    <div id="Vorstellung">
+    <h2>Hi, ich bin</h2>
+        <h1><b>Fabio</b></h1>
+    <h4>Game-/ App-/ Web-Developer</h4>
+        <button ><b><a   id="buttonProjekte" href="#Meine-Projekte">MEINE PROJEKTE</a></b></button>
+        </div>
+        
+    <div id="slideshow">
+        
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="Group%204.png" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="Group%203.png" style="width:100%">
+    
+  </div>
+
+  
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+ 
+</div>
+        
+        </div>  
+        
+        
+        <div id="Meine-Projekte">
+        <h1 id="ueberschrift"> Meine Projekte</h1>
+        <a>Playstore Apps und Spiele</a>
+        <a></a>
+        </div>
+        
+        <div id="playstore">
+            <a href="https://play.google.com/store/apps/details?id=click.clicker.gameclicker&gl=DE" target="_blank"><img src="Group%209.png" ></a>
+            <a href="https://play.google.com/store/apps/details?id=com.Catch.PumpkinThe&gl=DE" target="_blank"><img  src="Group%2010.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=appinventor.ai_fabiolucaott.Download_Time_Calculator&gl=DE" target="_blank"><img  src="Group%2011.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=appinventor.ai_fabiolucaott.create_QR_Code&gl=DE" target="_blank"><img  src="Group%2012.png"></a>
+        </div>
+        <div id="andereProjekte">
+        <a>andere Projekte</a>
+        <h1></h1>
+            <img src="image%205.png" width="50%">
+            
+           <div id="BuildIt"> <a>Build It</a><h1></h1>
+        <a>Ein Aufbau spiel in dem man seine Eigene Stadt aufbaut und Autos fahren lassen kann.</a></div>
+            
+        </div>
+        
+        
+        
+    </body>
+</html>
+<style>
+    @media (max-width: 1080px) {
+
+      
+
+
+    *{
+        background-color: #212121;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        color:#FFFFFF;
+        
+    }
+    #Vorstellung{
+        margin-left: 10%;   
+        margin-top: 25%;
+        margin-bottom: 15%;
+    }
+    button{
+        background-color: #EA3A60;
+        border: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 4px;
+    }
+    #buttonProjekte{
+        background-color: #EA3A60;
+        text-decoration: none;
+        
+    }
+    
+    
+    #Meine-Projekte{
+        margin-left: 10%; 
+        margin-top: 20%;
+    }
+    #ueberschrift {
+        
+    }
+    #playstore {
+        margin-left: 10%;  
+        margin-top: 5%;
+    }
+     #playstore img{
+        width: 15%;
+         margin-right: 20px;
+    }
+    #andereProjekte {
+        margin-left: 10%;  
+        margin-top: 5%;
+        
+    }
+    #andereProjekte img{
+        margin-top: 3%;
+    }
+    #BuildIt {
+        width: 30%;
+        margin-left: 52%;
+        margin-top: -28%;
+        margin-bottom: 50%;
+    }
+    
+    #Slideshow {
+        margin-top: 500px;
+        margin-bottom: -50px;
+        width: 50%;
+    }
+    
+    
+        
+
+   
+
+
+* {box-sizing:border-box}
+
+
+</style>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    
+</script>
